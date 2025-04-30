@@ -1,0 +1,300 @@
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Portfolio VETU</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">Joséphine</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+							<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+								<li class="smooth-menu active"></li>
+								<li><a href="index.html#education">études</a></li>
+								<li><a href="index.html#skills">compétences</a></li>
+								<li><a href="index.html#experience">expérience</a></li>
+								<li><a href="index.html#portfolio">projets</a></li>
+								<li><a href="index.html#profiles">veille technologique</a></li>
+							</ul><!--/.nav -->
+						</div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+
+		    <div class="clearfix"></div>
+
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
+	
+	
+       
+			
+		<br/><br/><br/><br/><br/><br/>
+		<div class="section-heading text-center">
+			<h2>Projets et TP divers</h2>
+		</div>
+		
+		<section class="projet_section">
+			<div class="container">
+				<div class="projets-content">
+					<h2 style="font-size: 22px;">GESTION PERSONNEL</h2>
+					
+					<p>Dans ce projet JakartaEE, j'ai développé une application web pour gérer le personnel d'une entreprise de travaux publics.</p>
+
+					<p>L'application repose sur plusieurs grandes fonctionnalités :</p>
+					
+					<p><strong>Authentification</strong> :<br>
+					Seul le chef de chantier peut accéder à l’application après vérification du login et du mot de passe dans une base de données MySQL (<em>bdpersonnel</em>).</p>
+					<img src="images/gestionPersonnel/authent.png" width="570" height="auto"/>
+
+					<p><strong>Mise en place du projet</strong> :<br>
+					- Création d'un projet <em>PersonnelTP</em> sous NetBeans.<br>
+					- Intégration des bibliothèques JSTL et MySQL.<br>
+					- Utilisation de Bootstrap 5 pour rendre les formulaires attractifs.<br>
+					- Configuration de la base de données à l’aide d’un script fourni.<br>
+					- Déploiement de la structure projet : dossiers <em>jspf</em>, packages <em>controleur</em>, <em>modelesBean</em>, <em>bdd</em>, <em>formulaires</em>.</p>
+					
+					<p><strong>Développement technique</strong> :<br>
+
+						<div class="col-sm-3">
+							<img src="images/gestionPersonnel/MVC.png" alt=""  width="200" height="auto"/>
+						</div>
+						<div>
+							<p>
+								- Création d'une servlet <em>AuthentifServlet</em> pour gérer l'affichage et la soumission du formulaire d'authentification.<br>
+								- Développement d'une classe <em>Connexion</em> pour se connecter à la base de données.<br>
+								- Développement d'une classe <em>UtilisateurMysql</em> pour valider les identifiants en base (avec des requêtes préparées pour plus de sécurité).<br>
+								- Développement d'une classe <em>AuthentifForm</em> pour récupérer les données du formulaire, les chiffrer et authentifier l'utilisateur.</p>
+								
+							</p>
+						</div>
+
+					<p><strong>Navigation après authentification</strong> :<br>
+					Une fois connecté, l’utilisateur arrive sur une <strong>page de menu</strong> proposant trois actions :</p>
+					<div class="col-sm-6">
+						<img src="images/gestionPersonnel/creationSalarie.png" alt=""/>
+					</div>
+					<div><br><br>
+					<p>- Créer un nouveau salarié (formulaire de saisie).<br>
+					- Lister les salariés existants.<br>
+					- Affecter les salariés (chantier, bureau, absence).</p>
+				</div></div>
+									
+			</div><br>
+
+			<div class="container">
+				<a href="assets/pdf/jakartaee10.pdf" target="_blank" download>Sujet en pdf</a>
+			</div><br>
+			<div class="container">
+					<h3>Compétences développées</h3><br>
+					<p>Mettre à disposition des utilisateurs un service informatique</p>
+					<p>Organiser son développement professionnel</p>
+			</div>
+		</section>
+			<br>
+
+			<section class="projet_section">
+				<div class="container">
+					<div class="projets-content">
+						
+						<h2 style="font-size: 22px;">DEVELOPEMENT WEB LARAVEL</h2>
+						
+						<p>Dans le cadre de mon apprentissage du développement web avec Laravel, j'ai mis en place un environnement de travail professionnel en utilisant <strong>Laravel Homestead</strong>.</p>
+
+						<p>J'ai commencé par installer Homestead, une machine virtuelle Vagrant optimisée pour le développement Laravel. L'installation passe par la configuration d'un fichier <em>Homestead.yaml</em> où j'ai défini le <strong>point de montage</strong> (mapping entre un dossier de mon ordinateur hôte et un dossier dans la machine virtuelle). Cela permet de synchroniser automatiquement les fichiers entre ma machine locale et Homestead, ce qui facilite le développement en temps réel sans avoir besoin de transférer manuellement les fichiers.</p>
+						
+						<p>Grâce à Homestead, j'ai disposé rapidement d'un environnement complet avec Nginx, PHP, MySQL, Composer et Laravel, sans avoir à configurer manuellement chaque service.</p>
+						
+						<p>Après la configuration de l'environnement, j'ai créé un nouveau projet Laravel et configuré les premiers éléments :</p>
+						
+						<p>- Définition des <strong>routes</strong> dans le fichier <code>web.php</code> pour lier les URL aux contrôleurs.<br>
+						- Création des <strong>contrôleurs</strong> pour gérer les différentes requêtes utilisateurs.<br>
+						- Développement des <strong>vues Blade</strong> pour afficher les interfaces de l'application.</p>
+						
+						<p>Pour mettre en pratique mes connaissances, j'ai développé une <strong>application de To-Do List</strong>.</p>
+						
+						<p>Dans cette application :</p>
+						
+						<p>- J'ai permis aux utilisateurs d'ajouter, d'afficher et de supprimer des tâches.<br>
+						- J'ai utilisé <strong>Eloquent ORM</strong> pour interagir avec la base de données.<br>
+						- J'ai mis en place des <strong>migrations</strong> pour créer dynamiquement les tables nécessaires.<br>
+						- J'ai intégré un <strong>script JavaScript</strong> pour améliorer l'expérience utilisateur : par exemple, marquer une tâche comme terminée sans recharger la page grâce à la manipulation du DOM et à la gestion des événements.</p>
+						
+						<p>Ce projet m'a permis de renforcer ma compréhension du fonctionnement du framework Laravel, du modèle MVC, de la gestion des bases de données avec Eloquent, ainsi que de l'intégration de fonctionnalités dynamiques en JavaScript dans un projet PHP moderne.</p>
+						
+				</div><br>
+				<div class="container">
+					<a href="assets/pdf/sujet_forum.pdf" target="_blank" download>Sujet en pdf</a>
+				</div><br>
+				<div class="container">
+						<h3>Compétences développées</h3><br>
+						<p>Mettre à disposition des utilisateurs un service informatique</p>
+						<p>Organiser son développement professionnel</p>
+				</div>
+			</section>
+				<br>
+
+				<section class="projet_section">
+					<div class="container">
+						<div class="projets-content">
+							<h2 style="font-size: 22px;">Gestion de parc informatique avec GLPI </h2>
+							
+							<p>Lors de TP de DSDI, j'ai installé et configuré GLPI (Gestionnaire Libre de Parc Informatique) sur une machine Debian 11 Bookworm, déployée dans VirtualBox.
+						<br>J'ai créé une infrastructure virtuelle composée de trois machines :<br>
+							- Un serveur Windows Server 2019<br>
+							- Un client Windows 10<br>
+							- Un serveur Debian contenant GLPI</p>
+							
+							<p>J'ai configuré tout le réseau interne, avec le serveur Windows comme passerelle pour permettre la communication entre les machines.</p>
+
+							<p>J'ai également mis en place un <strong>Active Directory</strong> sur le serveur Windows Server 2019. L'Active Directory est un service d'annuaire permettant de centraliser la gestion des utilisateurs, des ordinateurs, et des ressources du réseau. Grâce à l'AD, j'ai pu organiser et sécuriser les accès au réseau et préparer une intégration avec GLPI.</p>
+														
+							<p>Enfin, j'ai utilisé GLPI pour effectuer une <strong>gestion de tickets</strong> :<br>
+							- J'ai créé différents tickets d'incidents et de demandes.<br>
+							- J'ai simulé le traitement de ces tickets en tant que technicien et administrateur, en suivant leur cycle de vie (création, attribution, suivi, résolution).<br>
+							- Cela m'a permis de découvrir le fonctionnement complet du module d'assistance de GLPI.</p><br>
+							
+							<p>Pour plus de détails, j'ai produis trois rapports que vous pouvez retrouvez ci-dessous:</p>
+							
+					</div><br>
+					<div class="container">
+						- <a href="assets/pdf/install_reseau_et_glpi.pdf" target="_blank" download>Installation réseau et GLPI</a><br>
+						- <a href="assets/pdf/Active_directory_GLPI.pdf" target="_blank" download>Active Directory</a><br>
+						- <a href="assets/pdf/Gestion_projet_GLPI.pdf" target="_blank" download>Gestion de projet avec GLPI</a><br>
+					</div><br>
+					<div class="container">
+							<h3>Compétences développées</h3><br>
+							<p>Gérer le patrimoine informatique</p>
+					</div>
+				</section>
+					<br>
+
+
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+		
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+        
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>
+	
